@@ -1,9 +1,10 @@
 on:
-    push 1
+    push
 
 jobs:
     build:
+        name: 上传
         runs-on: ubuntu-latest
-
         steps:
             - run: echo "Hello World"
+            - run: echo "pwd"
